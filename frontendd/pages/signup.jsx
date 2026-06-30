@@ -14,7 +14,7 @@ function Signup() {
     const onSubmit = async(e)=>{
         e.preventDefault()
         try{
-            const response = await axios.post("http://localhost:3000/user/signup",{email,username,password});
+            const response = await axios.post("https://buykartproject.onrender.com/user/signup",{email,username,password});
             alert("signup successfull")
             navigate("/");
         }catch(err){
