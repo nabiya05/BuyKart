@@ -13,7 +13,7 @@ function Login() {
     const onSubmit = async(e)=>{
         e.preventDefault()
         try{
-            const response = await axios.post("http://localhost:3000/user/login",{username,password});
+            const response = await axios.post("https://buykartproject.onrender.com/user/login",{username,password});
             alert("login successfull")
             navigate("/");
         }catch(err){
