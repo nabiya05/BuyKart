@@ -20,7 +20,7 @@ const handleAddCart = () => {
 
     useEffect(()=>{
         async function Productdetails(){
-            let p =await axios.get(`http://localhost:3000/products/${id}`);
+            let p =await axios.get(`https://buykartproject.onrender.com/products/${id}`);
             setProduct(p.data)
             console.log(p.data)
         }
